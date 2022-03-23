@@ -7,7 +7,7 @@
 #### Implementate de catre
 #### _**[Bordea Ion](https://github.com/JohnBordea/)**_
 #### _**[Hatmanu Lavinia](https://github.com/HatmanuLavinia/)**_
-#### _**[Cătalin Pavlovschi](https://github.com/)**_
+#### _**[Cătalin Pavlovschi](https://github.com/K4T4L1N/)**_
 
 ## Cerințe
 

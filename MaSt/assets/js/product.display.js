@@ -10,7 +10,7 @@ if(id != null) {
     var data = JSON.parse(productData);
     var el = data.find(item => item.id == id)
 
-    document.title = "Product: " + el.name;
+    document.title = "MyStamp: " + el.name;
     document.getElementById("product-image").src = el.image;
     document.getElementById("product-name").innerHTML = el.name;
     document.getElementById("product-info").innerHTML = el.info;

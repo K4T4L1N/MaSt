@@ -1,26 +1,39 @@
+<?php
+session_start();
+
+
+  include("connect.php");
+  include("functions.php");
+
+  $user_data=check_login($con);
+
+$_SESSION;
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>About Us</title>
+		<title>MyStamp</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	    <link rel="icon" href="images/2022-04-16 17_39_42-Canva.jpg" type="image/gif">
+		<link rel="icon" href="images/2022-04-16 17_39_42-Canva.jpg" type="image/gif">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload left-sidebar">
+	<body class="is-preload homepage">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-            <div id="header-wrapper">
+			<div id="header-wrapper">
                 <header id="header" class="container">
 
                     <!-- Logo -->
-                    <div id="logo">
-                        <h1><a href="index.php">MyStamp</a></h1>
-                    </div>
+					<div id="logo">
+						<h1><a href="index.php">MyStamp</a></h1>
+					</div>
 
                     <!-- Nav -->
-                    <nav id="nav">
+					<nav id="nav">
                                 <ul>
                                     <li  class="current"><a href="index.php">Main</a></li>
 
@@ -55,106 +68,93 @@
                             </nav>
 
                     </header>
-                </div>				
-         
+                </div>
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-4 col-12-medium">
-								<div id="sidebar">
+			<!-- Banner -->
+			<div id="banner-wrapper">
+				<div id="banner" class="box container">
+					<div class="row">
+						<div class="col-12 col-12-medium">
+							<h2>Hi. Here you can buy or sell Stamps!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
 
-									<!-- Sidebar -->
-										<section>
-											<h3>Our purpose</h3>
-											<p>Here you can find our vision, if you are interested in finding out more, click the button below!</p>
-                                            <footer>
-												<a href="scholarly.html" class="button icon solid fa-info-circle">Find out more about our purpose</a>
-											</footer>
-										</section>
+			<div id="main-wrapper">
+				<div class="container">
+					<h2>Recently added Stamps</h2>
+
+					<div id="features-wrapper">
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-12-medium">
+	
+									<!-- Box -->
+									<section class="box feature">
+										<a href="product_page.html?id=0" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<div class="inner">
+											<header>
+												<h2>Name</h2>
+												<p>Seller</p>
+											</header>
+											<p>Description</p>
+										</div>
+									</section>
+	
 								</div>
-							</div>
-							<div class="col-8 col-12-medium imp-medium">
-								<div id="content">
-
-									<!-- Content -->
-										<article>
-
-											<h2>About Us</h2>
-
-											<p>Our purpose is to fulfill all types of tastes and help everyone find a stamp that suits its preferences.
-                                            </p>
-
-											<h3>Who are we & What we do?</h3>
-											<p>Here you can find all kind of stamps: collections ones, rare ones, old or new, everything you search for.
-                                                Moreover if you are a collectionar you can also sell your stamps to our customers and that's how our vast
-                                                collection has been made. 
-                                            </p>
-
-											<p>We are selling stamps all over the world coming from all over the world helping people collect and share their
-                                                stamps with others.
-                                            </p>
-                                            <h3>Our team</h3>
-                                            <div id="features-wrapper">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-4 col-12-medium">
-                            
-                                                            <!-- Box -->
-                                                                <section class="box feature">
-                                                                    <a class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-                                                                    <div class="inner">
-                                                                        <header>
-                                                                            <h2>Bordea Ion</h2>
-                                                                            <h2>&nbsp;</h2>
-                                                                        </header>
-                                                                        <p>Description</p>
-                                                                    </div>
-                                                                </section>
-                            
-                                                        </div>
-                                                        <div class="col-4 col-12-medium">
-                            
-                                                            <!-- Box -->
-                                                                <section class="box feature">
-                                                                    <a class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                                                                    <div class="inner">
-                                                                        <header>
-                                                                            <h2>Hatmanu Lavinia</h2>
-                                                                        </header>
-                                                                        <p>Description</p>
-                                                                    </div>
-                                                                </section>
-                            
-                                                        </div>
-                                                        <div class="col-4 col-12-medium">
-                            
-                                                            <!-- Box -->
-                                                                <section class="box feature">
-                                                                    <a class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                                                                    <div class="inner">
-                                                                        <header>
-                                                                            <h2>Pavlovschi Catalin</h2>
-                                                                        </header>
-                                                                        <p>Description</p>
-                                                                    </div>
-                                                                </section>
-                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-										</article>
-
+								<div class="col-4 col-12-medium">
+	
+									<!-- Box -->
+									<section class="box feature">
+										<a href="product_page.html?id=1" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<div class="inner">
+											<header>
+												<h2>Name</h2>
+												<p>Seller</p>
+											</header>
+											<p>Description</p>
+										</div>
+									</section>
+	
+								</div>
+								<div class="col-4 col-12-medium">
+	
+									<!-- Box -->
+									<section class="box feature">
+										<a href="product_page.html?id=2" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<div class="inner">
+											<header>
+												<h2>Name</h2>
+												<p>Seller</p>
+											</header>
+											<p>Description</p>
+										</div>
+									</section>
+	
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-<!-- Footer -->
+			<!-- Main -->
+				<div class="container">
+					<div class="row gtr-200">
+						<div class="col-12 col-12-medium imp-medium">
+
+							<!-- Content -->
+							<div id="content">
+								<section class="last">
+								</section>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
                 <div id="footer-wrapper">
                     <footer id="footer" class="container">
                         <div class="row">
@@ -234,15 +234,11 @@
                     </footer>
                 </div>
 
-
-		<!-- Scripts -->
-
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

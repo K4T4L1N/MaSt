@@ -2,10 +2,7 @@
 
 #### Repozitoriul contine implementarea proiectului **[MaSt](https://profs.info.uaic.ro/~vcosmin/proiectetw)**.
 
-### Propus si coordonat de catre [Lect. dr. Varlan Cosmin](https://profs.info.uaic.ro/~vcosmin)
-
 #### Implementate de catre
-#### _**[Bordea Ion](https://github.com/JohnBordea/)**_
 #### _**[Hatmanu Lavinia](https://github.com/HatmanuLavinia/)**_
 #### _**[Cătalin Pavlovschi](https://github.com/K4T4L1N/)**_
 
